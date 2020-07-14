@@ -1,0 +1,173 @@
+$header-bg: #7EA8BE;
+$header-text: white;
+$nav-bg: white;
+$nav-text: #830A48;
+$nav-text-hover: #FAB2EA;
+$game-bg: #F6F0ED;
+$success: #2A9134;
+$tryagain: #EE4266;
+$highlight-font: 'Permanent Marker', cursive;
+$font: 'Raleway', sans-serif;
+
+$container-width: 50rem;
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: $font;
+}
+
+.header {
+    background-color: $header-bg;
+    padding: 1.5rem 0.5rem;
+    color: $header-text;
+    height: 25%;
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: $container-width;
+        padding: 1.5rem 0.5rem;
+
+        #rgbcode {
+            font-family: $highlight-font;
+            font-size: 4rem;
+        }
+    }
+
+    h3, h1, h3 {
+        margin: auto;
+    }
+}
+
+.nav {
+    background-color: $nav-bg;
+    color: $nav-text;
+    height: 5%;
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: $container-width;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        #difficulty {
+            width: 8rem;
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        #tryagain {
+            display: none;
+            padding: 7px;
+            color: $tryagain;
+            font-family: $highlight-font;
+        }
+
+        #newcolors {
+            padding: 7px;
+            transition: color 0.2s, font-size 1s;
+        }
+
+        #outcome {
+            padding: 7px;
+        }
+        #success {
+            display: none;
+            color: $success;
+            font-family: $highlight-font;
+        }
+        
+        #playagain {
+            padding: 7px;
+            display: none;
+            transition: color 0.2s, font-size 1s;
+        }
+
+        #easymode {
+            padding: 7px;
+            transition: color 0.2s, font-size 1s;
+        }
+
+        #difficultmode {
+            background-color: $header-bg;
+            padding: 7px;
+            transition: color 0.2s, font-size 1s;
+        }
+
+        #playagain:hover {
+            cursor: pointer;
+            color: $nav-text-hover;
+            font-size: 1.02rem;
+        }
+
+        #newcolors:hover {
+            cursor: pointer;
+            color: $nav-text-hover;
+            font-size: 1.02rem;
+        }
+
+        #easymode:hover {
+            cursor: pointer;
+            color: $nav-text-hover;
+            font-size: 1.02rem;       
+        }
+
+        #difficultmode:hover {
+            cursor: pointer;
+            color: $nav-text-hover;
+            font-size: 1.02rem;
+        }
+    }
+}
+
+.game {
+    background-color: $game-bg;
+    height: 100% - 5% - 25%;
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+
+    .container {
+        width: $container-width;
+        padding: 1.5rem 0.5rem;
+        display: block;
+
+        .row {
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-around;
+            margin: 1rem auto;
+        }
+
+        .col-sm {
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        .card {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 25px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.7s, box-shadow 0.7s;
+        }
+
+        .card:hover {
+            border-radius: 25px;
+            background: $game-bg;
+            box-shadow:  5px 5px 8px #b4afad;
+        }
+
+       
+    }
+
+}

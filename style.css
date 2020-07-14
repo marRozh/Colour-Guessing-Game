@@ -1,0 +1,138 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  background-color: #7EA8BE;
+  padding: 1.5rem 0.5rem;
+  color: white;
+  height: 25%;
+  display: flex;
+  align-items: center;
+}
+.header .container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  padding: 1.5rem 0.5rem;
+}
+.header .container #rgbcode {
+  font-family: "Permanent Marker", cursive;
+  font-size: 4rem;
+}
+.header h3, .header h1, .header h3 {
+  margin: auto;
+}
+
+.nav {
+  background-color: white;
+  color: #830A48;
+  height: 5%;
+  display: flex;
+  align-items: center;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+}
+.nav .container p {
+  margin-bottom: 0;
+}
+.nav .container #difficulty {
+  width: 8rem;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.nav .container #tryagain {
+  display: none;
+  padding: 7px;
+  color: #EE4266;
+  font-family: "Permanent Marker", cursive;
+}
+.nav .container #newcolors {
+  padding: 7px;
+  transition: color 0.2s, font-size 1s;
+}
+.nav .container #outcome {
+  padding: 7px;
+}
+.nav .container #success {
+  display: none;
+  color: #2A9134;
+  font-family: "Permanent Marker", cursive;
+}
+.nav .container #playagain {
+  padding: 7px;
+  display: none;
+  transition: color 0.2s, font-size 1s;
+}
+.nav .container #easymode {
+  padding: 7px;
+  transition: color 0.2s, font-size 1s;
+}
+.nav .container #difficultmode {
+  background-color: #7EA8BE;
+  padding: 7px;
+  transition: color 0.2s, font-size 1s;
+}
+.nav .container #playagain:hover {
+  cursor: pointer;
+  color: #FAB2EA;
+  font-size: 1.02rem;
+}
+.nav .container #newcolors:hover {
+  cursor: pointer;
+  color: #FAB2EA;
+  font-size: 1.02rem;
+}
+.nav .container #easymode:hover {
+  cursor: pointer;
+  color: #FAB2EA;
+  font-size: 1.02rem;
+}
+.nav .container #difficultmode:hover {
+  cursor: pointer;
+  color: #FAB2EA;
+  font-size: 1.02rem;
+}
+
+.game {
+  background-color: #F6F0ED;
+  height: 70%;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.game .container {
+  width: 50rem;
+  padding: 1.5rem 0.5rem;
+  display: block;
+}
+.game .container .row {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+}
+.game .container .col-sm {
+  display: inline-flex;
+  justify-content: center;
+}
+.game .container .card {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.7s, box-shadow 0.7s;
+}
+.game .container .card:hover {
+  border-radius: 25px;
+  background: #F6F0ED;
+  box-shadow: 5px 5px 8px #b4afad;
+}
+
+/*# sourceMappingURL=style.css.map */
